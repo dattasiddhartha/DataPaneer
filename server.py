@@ -11,7 +11,7 @@ CORS(app)
 
 @app.route("/")
 def hello():
-    return jsonify({'text':'Hello World!'})
+    return jsonify({'text':'🤖 local server running 🤖'})
 
 class Employees(Resource):
     def get(self):
