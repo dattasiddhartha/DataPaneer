@@ -1,10 +1,11 @@
 ### DataPaneer
 
-##### DefHacks 2020 Submission
+##### DefHacks 2020 Submission | [DevPost](https://devpost.com/software/datapaneer)| [YouTube](https://www.youtube.com/watch?v=IybTefxD1sc) |
 
 <b>Collaborators</b>: [Vikram Sambamurthy](https://github.com/v97), [Siddhartha Datta](https://github.com/dattasiddhartha/)
 
-<!--Image-->
+<img src="./static/webapp.PNG" height="250px"></img>
+<img src="./static/inversecooking.PNG" height="250px"></img>
 
 Roadmap to this product
 * Scraped food data (image, ingredients, health information)
@@ -19,13 +20,13 @@ Weights can be downloaded from [here](https://drive.google.com/drive/folders/1Su
 
 Data for training CycleGAN: [[food]](https://github.com/karansikka1/iFood_2019)
 
+#### Food Style Transfer
+
+Style weights stored in './fast_neural_style_transfer/models'.
+
 #### CycleGAN
 
-Place data in `./datasets/` with image set pairs as `trainA` and `trainB` for training.
-
-#### Flask service
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
+Place data in `./datasets/` with image set pairs as `trainA` and `trainB` for training. Training time can go up to 13hrs per food mask, tested on GTX1070.
 
 ##### Development server
 
