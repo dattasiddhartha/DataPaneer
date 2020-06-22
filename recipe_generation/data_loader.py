@@ -1,5 +1,3 @@
-# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
-
 import torch
 import torchvision.transforms as transforms
 import torch.utils.data as data
@@ -8,7 +6,7 @@ import pickle
 import numpy as np
 import nltk
 from PIL import Image
-from build_vocab import Vocabulary
+from recipe_generation.build_vocab import Vocabulary
 import random
 import json
 import lmdb

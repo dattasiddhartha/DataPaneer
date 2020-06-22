@@ -1,13 +1,11 @@
-# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
-
 import torch
 import torch.nn as nn
 import random
 import numpy as np
-from modules.encoder import EncoderCNN, EncoderLabels
-from modules.transformer_decoder import DecoderTransformer
-from modules.multihead_attention import MultiheadAttention
-from utils.metrics import softIoU, MaskedCrossEntropyCriterion
+from recipe_generation.modules.encoder import EncoderCNN, EncoderLabels
+from recipe_generation.modules.transformer_decoder import DecoderTransformer
+from recipe_generation.modules.multihead_attention import MultiheadAttention
+from recipe_generation.utils.metrics import softIoU, MaskedCrossEntropyCriterion
 import pickle
 import os
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')

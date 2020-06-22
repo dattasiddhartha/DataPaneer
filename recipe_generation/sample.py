@@ -1,20 +1,18 @@
-# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
-
 import torch
 import numpy as np
-from args import get_parser
+from recipe_generation.args import get_parser
 import pickle
 import os
 from torchvision import transforms
-from build_vocab import Vocabulary
-from model import get_model
+from recipe_generation.build_vocab import Vocabulary
+from recipe_generation.model import get_model
 from tqdm import tqdm
-from data_loader import get_loader
+from recipe_generation.data_loader import get_loader
 import json
 import sys
-from model import mask_from_eos
+from recipe_generation.model import mask_from_eos
 import random
-from utils.metrics import softIoU, update_error_types, compute_metrics
+from recipe_generation.utils.metrics import softIoU, update_error_types, compute_metrics
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 map_loc = None if torch.cuda.is_available() else 'cpu'
 

@@ -4,14 +4,25 @@ from flask_restful import Resource, Api
 from json import dumps
 from flask_jsonpify import jsonify
 
+# model imports
+from recipe_reverseengin import RE_recipes
+
 app = Flask(__name__)
 api = Api(app)
 
 CORS(app)
 
 @app.route("/")
-def hello():
-    return jsonify({'text':'🤖 local server running 🤖'})
+def initialization():
+
+    # Image reverse-engineering test
+    information = RE_recipes(img_path = './recipe_generation/data/demo_imgs/1.jpg')
+
+    # Image style transfer test
+
+    # return jsonify({'text':'🤖 local server running 🤖'})
+    return jsonify({'text':str(information)})
+
 
 class Employees(Resource):
     def get(self):
