@@ -27,7 +27,7 @@ Data for training CycleGAN: [[food]](https://github.com/karansikka1/iFood_2019)
 
 #### Food Style Transfer
 
-Style weights stored in './fast_neural_style_transfer/models'.
+Style weights stored in `./fast_neural_style_transfer/models`.
 
 #### CycleGAN
 
