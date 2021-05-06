@@ -37,7 +37,7 @@ fastavro==0.23.4
 fasteners==0.15
 fire==0.3.1
 Flask==1.1.2
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 future==0.18.2
 gast==0.2.2
 gevent==20.6.2
