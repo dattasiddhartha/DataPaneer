@@ -128,7 +128,7 @@ parso==0.7.0
 pathspec==0.8.0
 pbr==5.4.5
 pickleshare==0.7.5
-Pillow==7.1.2
+Pillow==8.3.2
 pretty-midi==0.2.9
 prometheus-client==0.8.0
 promise==2.3
